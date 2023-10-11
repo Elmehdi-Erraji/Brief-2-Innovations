@@ -287,16 +287,8 @@ footer{
     margin-right: 10px;
 }
 
-.contact{
-    padding: 10% 30px;
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-wrap: wrap;
-	background-color: #F8F0EA;
-	align-items: center;
-    justify-content: space-around;
-}
+
+  
 .news-text h2{
 	margin-bottom: 5px;
 	color: black;
@@ -350,54 +342,6 @@ footer{
 .news-text a:hover{
     transform: translateX(20px);
 }
-
-.contact form{
-	margin-top: 100px;
-	max-width: 100%;
-	width: 100%;
-}
-.forms{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contact form input:first-child{
-	display: inline-block;
-	width: 100%;
-	padding: 20px 30px;
-	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
-	outline: none;
-	border: none;
-	border-radius: 15px;
-    margin-right: 10px;
-}
-
-
-
-.contact form input:last-child{
-	display: inline-block;
-	width: 100%;
-	padding: 20px 150px 20px 30px;
-	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
-	outline: none;
-	border: none;
-	border-radius: 15px;
-    margin-right: 10px;
-}
-
-.contact form textarea{
-    display: inline-block;
-	width: 100%;
-	padding: 20px 150px 20px 30px;
-	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
-	outline: none;
-	border: none;
-	border-radius: 15px;
-    margin-right: 10px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
 .send button{
     background-color: white;
     padding: 15px 30px;
@@ -419,3 +363,86 @@ footer{
 	outline: none;
     
 }
+
+/*subscreption section start*/
+
+.subscribe{
+    width: 110%;
+    height: 50px;
+    height: auto;
+    background-image: url(../img/Untitled\ design\ \(4\).png);
+    background-position: center;
+    background-size: cover;
+    padding: 6% 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.det{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    gap: 35px;
+    background-color: white;
+    width: 60%;
+    padding: 2.5%;
+    border-radius: 10px;
+}
+
+
+.titles h1{
+    font-size: 25px;
+}
+.titles p{
+    font-size: 10px;
+    color: grey;
+    width: 70%;
+    margin-top: 10px;
+}
+.det form p{
+    color: grey;
+    font-size: 8px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+form input{
+    background-color: #EFF3F7;
+    border: none;
+    padding: 15px 30px;
+    width: 110%;
+    border-radius: 5px;
+    color: black;
+}
+form a{
+    background-color: black;
+    cursor: pointer;
+}
+.txt3 a input{
+    cursor: pointer;
+}
+
+#subscribe {
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #DB4A87;
+    width: 110px;
+    height: 48px;
+    border-radius: 5px;
+    border-style: none;
+    margin-bottom: 25px;
+    color: white;
+}
+
+
+.check{
+    margin-left: 5px;
+    display: flex;
+}
+.check img{
+    margin-top: 5px;
+}
+/*subscreption section End*/
