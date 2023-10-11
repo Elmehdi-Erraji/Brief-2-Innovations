@@ -367,9 +367,7 @@ footer{
 /*subscreption section start*/
 
 .subscribe{
-    width: 110%;
-    height: 50px;
-    height: auto;
+    width: 110%; 
     background-image: url(../img/Untitled\ design\ \(4\).png);
     background-position: center;
     background-size: cover;
