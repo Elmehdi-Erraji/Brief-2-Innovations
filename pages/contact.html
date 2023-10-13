@@ -70,33 +70,21 @@
             <h1>Git in <span>Touch</span></h1>
             <p>Let's Connect and Shape Your Success Together!</p>
 
+            <input type="text" name="firstname" placeholder="Name*" required />
+            <input type="text" name="lastname" placeholder="Email*" required />
             <input
               type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Name*"
-              required
-            />
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Email"
-              required
-            />
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
+              name="phone"
               placeholder="Phone number*"
               required
             />
-            <select id="country" name="country">
-              <option value="#" selected>How did you find us?</option>
 
-              <option value="australia">Google search</option>
-              <option value="canada">Facebook</option>
-              <option value="usa">From a freind</option>
+            <label for="Social">How did you find us?</label>
+            <select id="Social" name="media">
+              <option value="#" selected>How did you find us?</option>
+              <option value="Google">Google search</option>
+              <option value="Facebook">Facebook</option>
+              <option value="friend">From a friend</option>
             </select>
 
             <input class="send button" type="submit" value="Submit" />
@@ -105,21 +93,21 @@
                 <img src="../assets/img/phone.png" alt="#" />
                 <div class="txt">
                   <h1>Phone</h1>
-                  <h5>+212569874585</h5>
+                  <h2>+212569874585</h2>
                 </div>
               </div>
               <div class="test1">
                 <img src="../assets/img/fax.png" alt="#" />
                 <div class="txt">
                   <h1>Fax</h1>
-                  <h5>+212669874585</h5>
+                  <h2>+212669874585</h2>
                 </div>
               </div>
               <div class="test1">
                 <img src="../assets/img/email.png" alt="#" />
                 <div class="txt">
                   <h1>E-mail</h1>
-                  <h5>info@innovation.com</h5>
+                  <h2>info@innovation.com</h2>
                 </div>
               </div>
             </div>
@@ -151,47 +139,79 @@
 
         <div class="det-foot">
           <h1>About Us</h1>
-          <li><a href="about.html">Support Center</a></li>
-          <li><a href="about.html">Customer Support</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="about.html">Copyright</a></li>
+          <ul>
+            <li><a href="about.html">Support Center</a></li>
+            <li><a href="about.html">Customer Support</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Copyright</a></li>
+          </ul>
         </div>
         <div class="det-foot">
           <h1>Our Information</h1>
-          <li><a href="contact.html">Return Policy</a></li>
-          <li><a href="contact.html">Privacy Policy</a></li>
-          <li><a href="contact.html">Terms & Conditions</a></li>
-          <li><a href="contact.html">Site Map</a></li>
+          <ul>
+            <li><a href="contact.html">Return Policy</a></li>
+            <li><a href="contact.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Terms & Conditions</a></li>
+            <li><a href="contact.html">Site Map</a></li>
+          </ul>
         </div>
         <div class="det-foot">
           <h1>My Account</h1>
-          <li><a href="login.html">Press inquiries</a></li>
-          <li><a href="login.html">Social media</a></li>
-          <li><a href="login.html">directories</a></li>
-          <li><a href="login.html">Images & B-roll</a></li>
+          <ul>
+            <li><a href="login.html">Press inquiries</a></li>
+            <li><a href="login.html">Social media</a></li>
+            <li><a href="login.html">directories</a></li>
+            <li><a href="login.html">Images & B-roll</a></li>
+          </ul>
         </div>
         <div class="det-foot">
           <h1>Connect</h1>
-          <li>
-            <a href="#"
-              ><img src="../assets/img/Group-3.png" alt="#" />Facebook</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img src="../assets/img/Group22.png" alt="#" />Twitter</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img src="../assets/img/Group-1.png" alt="#" />Github</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img src="../assets/img/Group-2.png" alt="#" />Dribble</a
-            >
-          </li>
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  class="fb"
+                  src="../assets/img/Group-3.png"
+                  width="20px"
+                  height="20px"
+                  alt="#"
+                />Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="twit"
+                  src="../assets/img/Group22.png"
+                  width="20px"
+                  height="17px"
+                  alt="#"
+                />Twitter</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="github"
+                  src="../assets/img/Group-1.png"
+                  width="20px"
+                  height="21px"
+                  alt="#"
+                />Github</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="drible"
+                  src="../assets/img/Group-2.png"
+                  width="20px"
+                  height="21px"
+                  alt="#"
+                />Dribble</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
