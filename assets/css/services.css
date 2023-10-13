@@ -1,0 +1,679 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	font-display: swap;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: 'Pacifico';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Pacifico Regular'), local('Pacifico-Regular'),
+	  url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
+		format('woff2');
+	font-display: swap;
+  }
+  
+:root{
+	--bg-color: #FFFFFF;
+	--text-color: black;
+	--second-color: #5a7184;
+	--main-color: #6e54fa;
+	--big-font: 6rem;
+	--h2-font: 3rem;
+	--p-font: 1.1rem;
+}
+body{
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 14%;
+    background-color: var(--bg-color);
+    transition: all .4s ease;
+    z-index: 1000;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.navlist{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    color: black;
+    font-size: 20px;
+}
+
+.logo img{
+    margin-right: 15px;
+    width: 100%;
+    height: 30px;
+}
+
+.navlist a{
+    color: black;
+    margin: 0 20px;
+    letter-spacing: 2px;
+}
+
+.navlist i{
+    display: none;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    color: black;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+.btn2{
+    color: #0A8080;
+    position: relative;
+}
+
+.line img{
+    position: absolute;
+    right: 14%;
+}
+
+.advertise{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8% 14%;
+    text-align: start;
+    background-color: #FFF5ED;
+    width: 100%;
+    height: 60vh;
+}
+
+.title-sec h1{
+    color: black;
+    font-size: 50px;
+}
+
+.title-sec h2{
+    font-size: 15px;
+    line-height: 30px; /* 250% */
+
+}
+
+
+
+.getbtn{
+    background-color: #0A8080;
+    color: white;
+    letter-spacing: 1px;
+    padding: 12px 22px;
+    margin-top: 15px;
+    display: inline-flex;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+
+
+.adver-img img{
+    width: 60%;
+    margin-bottom: -140px;
+    height: auto;
+    margin-left: 400px;
+}
+
+
+.cards{
+    width: 100%;
+    text-align: center;
+    padding: 8% 14%;
+}
+
+.cards h1{
+    font-size: 25px;
+}
+
+.cards p{
+    font-size: 10px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.row{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.rows-1{
+    display: flex;
+    text-align: start;
+}
+
+.rows-1 img{
+    width: 100px;
+    height: 100px;
+}
+
+.details h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    margin-left: 20px;
+}
+
+.details p{
+    margin-left: 20px;
+    width: 50%;
+}
+
+.cards2{
+    width: 100%;
+    text-align: center;
+    padding: 2% 14%;
+}
+
+.cards2 h1{
+    font-size: 25px;
+}
+
+.cards2 p{
+    font-size: 10px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.row{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.rows-1{
+    display: flex;
+    text-align: start;
+}
+
+.rows-1 img{
+    width: 100px;
+    height: 100px;
+}
+
+.details{
+    text-align: start;
+}
+
+.details h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    margin-left: 20px;
+}
+
+.details p{
+    margin-left: 20px;
+    width: 50%;
+}
+
+.details a{
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 15px;
+    display: inline-flex;
+    color: rgb(0, 102, 255);
+}
+
+.details a i{
+    vertical-align: middle;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.team{
+    padding: 8% 14%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.team .title-sec h1{
+    font-size: 30px;
+}
+.team .title-sec p{
+    font-size: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cad{
+    background-color: #FFF5ED;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-flex;
+}
+
+.cad img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.details-col{
+    text-align: center;
+}
+
+.details-col h1{
+    font-weight: 500;
+    font-size: medium;
+}
+.details-col p{
+    font-size: small;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.icons a i{
+    color: #ff951d;
+    font-size: medium;
+}
+
+
+.subscribe{
+    width: 100%;
+    height: auto;
+    background-image: url(../img/Group\ 79.png);
+    background-position: center;
+    background-size: cover;
+    padding: 6% 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.det{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    gap: 3rem;
+    background-color: white;
+    width: 60%;
+    padding: 2.5%;
+}
+
+.titles h1{
+    font-size: 25px;
+}
+.titles p{
+    font-size: 10px;
+    color: grey;
+    width: 70%;
+    margin-top: 10px;
+}
+
+
+form input{
+    background-color: #D4DAE2;
+    border: none;
+    padding: 15px 30px;
+    width: 65%;
+    border-radius: 10px;
+    color: black;
+}
+.txt3 p{
+    color: grey;
+    font-size: 8px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+form a{
+    background-color: #DB4A87;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 5% 10%;
+}
+
+.copy img{
+    margin-right: 15px;
+    width: 25px;
+    height: auto;
+}
+
+.rows{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy h1{
+    font-size: 15px;
+    color: #0F2137;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.copy p{
+    color: grey;
+    font-size: small;
+}
+
+.det-foot h1{
+    font-weight: 600;
+    font-size: large;
+    margin-bottom: 30px;
+    vertical-align: middle;
+}
+
+.det-foot a{
+    color: grey;
+    margin-bottom: 10px;
+    display: inline-flex;
+}
+
+.det-foot li img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width : 500px) {
+    header {
+        background-color: #0A8080;
+        bottom: -2%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0%;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.336);
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .other {
+        display: none;
+    }
+
+    .navlist li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navlist span {
+        color: white;
+        display: none;
+    }
+
+    .navlist i {
+        display: block;
+        color: white;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    .advertise {
+        
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 50%;
+    }
+
+    .title-sec h1 {
+        background-color: red;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .home-img img {
+        
+        width: 100%;
+        height: auto;
+    }
+
+    .cards {
+        background-color: transparent;
+        position: absolute;
+        top: 70%;
+        padding: 0% 14%;
+    }
+
+    .cards h1 {
+        font-size: 20px;
+    }
+
+    .row {
+        padding: 10% 14%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 60px;
+    }
+
+    .cards2 {
+        padding: 0% 14%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+        margin-top: 145%;
+        
+    }
+
+    .cards2 h1{
+        font-size: 15px;
+    }
+
+    .rows-1 img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .details h1 {
+        font-size: 10px;
+    }
+
+    .details p {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .team{
+        padding: 2% 14%;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    .team .title-sec h1{
+        font-size: 20px;
+    }
+    .team .title-sec p{
+        font-size: 7px;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 10%;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .cad{
+        background-color: #FFF5ED;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        align-items: center;
+        display: inline-flex;
+    }
+    
+    .cad img{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    
+    .details-col{
+        text-align: center;
+    }
+    
+    .details-col h1{
+        font-weight: 500;
+        font-size: medium;
+    }
+    .details-col p{
+        font-size: small;
+        color: grey;
+        margin-bottom: 10px;
+    }
+    
+    .icons{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons a i{
+        color: #ff951d;
+        font-size: medium;
+    }
+
+    .subscribe {
+        width: 100%;
+        height: auto;
+        background-image: url(../img/Group\ 79.png);
+        background-position: center;
+        background-size: cover;
+        margin-top: 10%;
+        padding: 6% 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .det {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+        background-color: white;
+        width: 100%;
+        padding: 2.5%;
+    }
+
+    .titles h1 {
+        font-size: 25px;
+    }
+
+    .titles p {
+        font-size: 10px;
+        color: grey;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+
+    form input {
+        background-color: #D4DAE2;
+        border: none;
+        padding: 15px 30px;
+        width: 100%;
+        border-radius: 10px;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    .txt3 p {
+        color: grey;
+        font-size: 8px;
+        margin-top: 10px;
+        margin-left: 2px;
+    }
+
+    form a {
+        background-color: #DB4A87;
+        color: white;
+        padding: 10px 20px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .rows {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

@@ -353,7 +353,7 @@ footer{
 }
 
 .copy p{
-    color: grey;
+    color: rgb(0, 0, 0);
     font-size: small;
    
 }
@@ -367,7 +367,7 @@ footer{
 }
 
 .det-foot a{
-    color: grey;
+    color: rgb(0, 0, 0);
     margin-bottom: 10px;
     margin-left: 50px;
     display: inline-flex;

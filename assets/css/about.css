@@ -92,17 +92,60 @@ header{
 }
 
 
+.advertise1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 4%;
+    text-align: start;
+    background-color: #FFF5ED;
+    width: 100%;
+    height: 70vh;
+}
 
+.title-sec1 h1{
+    color: black;
+    font-size: 50px;
+}
+
+.title-sec1 h2{
+    font-size: 15px;
+    line-height: 30px; /* 250% */
+    margin-right: 50px;
+
+}
+
+
+
+.getbtn2{
+    background-color: #0A8080;
+    color: white;
+    letter-spacing: 1px;
+    padding: 12px 22px;
+    margin-top: 5px;
+    display: inline-flex;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+
+
+.adver-img1 img{
+    width: 60%;
+    margin-bottom: -140px;
+    height: auto;
+    margin-left: 400px;
+}
 
 .about{
     display: flex;
-    
     justify-content: space-between;
     align-items: center;
     padding: 2% 4%;
     text-align: start;
     background-color: #FFF5ED;
     width: 100%;
+    height: 77vh;
 }
 
 .title{
@@ -434,7 +477,7 @@ header{
     border-radius: 50%;
     position: absolute;
     right: 30%;
-    bottom: -340%;
+    bottom: -250%;
     box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.192);
 }
 
