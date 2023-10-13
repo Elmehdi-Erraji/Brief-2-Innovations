@@ -114,8 +114,6 @@ header{
 
 }
 
-
-
 .getbtn{
     background-color: #0A8080;
     color: white;
@@ -427,253 +425,125 @@ footer{
 }
 
 
-@media screen and (max-width : 500px) {
-    header {
-        background-color: #0A8080;
-        bottom: -2%;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 0%;
-        width: 100%;
-        border-radius: 20px;
-        box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.336);
-    }
+/*team*/
+.team {
+    padding: 4% 8%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
 
-    .logo {
-        display: none;
-    }
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);  
+    margin-top: 10%;
+    gap: rem;
+    justify-content: space-between;
+}
+.title-sec1 h1{
+    font-size: 38px;
+}
 
-    .other {
-        display: none;
-    }
-
-    .navlist li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-    }
-
-    .navlist span {
-        color: white;
-        display: none;
-    }
-
-    .navlist i {
-        display: block;
-        color: white;
-        font-size: 25px;
-        margin-left: 10px;
-    }
-
-    .advertise {
-        
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        height: 50%;
-    }
-
-    .title-sec h1 {
-        background-color: red;
-        width: 100%;
-        font-size: 30px;
-    }
-
-    .home-img img {
-        
-        width: 100%;
-        height: auto;
-    }
-
-    .cards {
-        background-color: transparent;
-        position: absolute;
-        top: 70%;
-        padding: 0% 14%;
-    }
-
-    .cards h1 {
-        font-size: 20px;
-    }
-
-    .row {
-        padding: 10% 14%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 60px;
-    }
-
-    .cards2 {
-        padding: 0% 14%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 0px;
-        margin-top: 145%;
-        
-    }
-
-    .cards2 h1{
-        font-size: 15px;
-    }
-
-    .rows-1 img {
-        width: 70px;
-        height: 70px;
-    }
-
-    .details h1 {
-        font-size: 10px;
-    }
-
-    .details p {
-        width: 100%;
-        font-size: 10px;
-    }
-
-    .team{
-        padding: 2% 14%;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-        height: auto;
-    }
+.col {
+    padding: 60px;
+    background-color: #FFFAF6;
+    align-items: center;
+    row-gap: 10px;   
+}
+.col h1{
+    color: #0B2110;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.col h2{
     
-    .team .title-sec h1{
-        font-size: 20px;
-    }
-    .team .title-sec p{
-        font-size: 7px;
-    }
+    margin-top: 50px;
+}
+
+.col p{
+    margin-top: 10px;
+    color: #0B2110;
+    font-weight: 400;
+    /* width: 20vh; */
+}
+
+.c1{
+    font-size: 18px;
+    font-weight: 400;
     
-    .container{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        margin-top: 10%;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
-    
-    .cad{
-        background-color: #FFF5ED;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        align-items: center;
-        display: inline-flex;
-    }
-    
-    .cad img{
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    
-    .details-col{
-        text-align: center;
-    }
-    
-    .details-col h1{
-        font-weight: 500;
-        font-size: medium;
-    }
-    .details-col p{
-        font-size: small;
-        color: grey;
-        margin-bottom: 10px;
-    }
-    
-    .icons{
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-        align-items: center;
-    }
-    .icons a i{
-        color: #ff951d;
-        font-size: medium;
-    }
+}
+.c2{
+    font-size: 18px;
+    font-weight: 400;
+}
 
-    .subscribe {
-        width: 100%;
-        height: auto;
-        background-image: url(../img/Group\ 79.png);
-        background-position: center;
-        background-size: cover;
-        margin-top: 10%;
-        padding: 6% 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.details-col {
+    text-align: center;
+}
 
-    .det {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 3rem;
-        background-color: white;
-        width: 100%;
-        padding: 2.5%;
-    }
+.details-col h1 {
+    font-weight: 500;
+    font-size: 1px;
+}
 
-    .titles h1 {
-        font-size: 25px;
-    }
+.details-col p {
+    font-size: small;
+    color: grey;
+    margin-bottom: 10px;
+}
 
-    .titles p {
-        font-size: 10px;
-        color: grey;
-        width: 100%;
-        margin-top: 10px;
-        text-align: center;
-    }
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons a i {
+    color: #0A8080;
+    font-size: medium;
+}
 
 
-    form input {
-        background-color: #D4DAE2;
-        border: none;
-        padding: 15px 30px;
-        width: 100%;
-        border-radius: 10px;
-        color: black;
-        margin-bottom: 20px;
-    }
 
-    .txt3 p {
-        color: grey;
-        font-size: 8px;
-        margin-top: 10px;
-        margin-left: 2px;
-    }
+.icon-s i {
+    color: black;
+}
 
-    form a {
-        background-color: #DB4A87;
-        color: white;
-        padding: 10px 20px;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        margin-right: 20px;
-    }
+.col-final {
+    filter: contrast(50%)
+}
 
-    .rows {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2rem;
-        justify-content: center;
-        align-items: center;
-    }
+ 
+.getbtn-about2{
+    margin-bottom: 20px;
+    background-color: #0A8080;
+    color: white;
+    letter-spacing: 1px;
+    padding: 12px 22px;
+    margin-top: 15px;
+    display: inline-flex;
+    border-radius: 5px;
+}
 
+.getbtn-about{
+    border: solid ;
+    border-color: #0A8080;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 12px 22px;
+    margin-top: 15px;
+    display: inline-flex;
+    border-radius: 5px;
+}
+.getbtn-about3{
+    background-color: #0A8080;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 12px 130px;
+    border-radius: 5px;
+    margin-left: 405px;
+    position:  relative;
+    top: 150px;
 }
