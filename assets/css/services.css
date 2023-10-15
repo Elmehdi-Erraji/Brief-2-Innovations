@@ -98,7 +98,7 @@ header{
     align-items: center;
     padding: 8% 14%;
     text-align: start;
-    background-color: #FFF5ED;
+    background-color: #f5f4f4;
     width: 100%;
     height: 60vh;
 }
@@ -269,7 +269,7 @@ header{
 }
 
 .cad{
-    background-color: #FFF5ED;
+    background-color: #f5f4f4;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -311,6 +311,7 @@ header{
     font-size: medium;
 }
 
+/*subscribe start */
 
 .subscribe{
     width: 100%;
@@ -322,9 +323,11 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .det{
+   
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
@@ -334,6 +337,7 @@ header{
     background-color: white;
     width: 60%;
     padding: 2.5%;
+    border-radius: 8px;
 }
 
 .titles h1{
@@ -362,71 +366,30 @@ form input{
     margin-left: 2px;
 }
 
-form a{
+form a {
     background-color: #DB4A87;
     color: white;
     padding: 10px 20px;
     margin-left: 10px;
+    border-radius: 5px;
 }
 
-footer{
-    width: 100%;
-    height: auto;
-    padding: 5% 10%;
+.check-box{
+    display: flex;
+}
+.check-box input {
+    width: 15px;
+}
+.check-box p {
+    font-size: 14px;
+     margin-bottom: 8px;
 }
 
-.copy img{
-    margin-right: 15px;
-    width: 25px;
-    height: auto;
-}
-
-.rows{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.copy h1{
-    font-size: 15px;
-    color: #0F2137;
-    font-weight: 400;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.copy p{
-    color: grey;
-    font-size: small;
-}
-
-.det-foot h1{
-    font-weight: 600;
-    font-size: large;
-    margin-bottom: 30px;
-    vertical-align: middle;
-}
-
-.det-foot a{
-    color: grey;
-    margin-bottom: 10px;
-    display: inline-flex;
-}
-
-.det-foot li img{
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-top: 2px;
-    margin-right: 10px;
-}
-
+/*subscreption section End*/
 
 /*team*/
 .team {
+  
     padding: 4% 8%;
     justify-content: center;
     text-align: center;
@@ -546,4 +509,96 @@ footer{
     margin-left: 405px;
     position:  relative;
     top: 150px;
+}
+
+/*footer style*/
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 5% 10%;
+}
+
+.copy{
+    margin-bottom: auto;
+}
+
+.rows div{
+    margin-left: 20px;
+}
+
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.copy img{
+    margin-right: 15px;
+    width: 33px;
+    height: auto;
+    
+}
+
+
+
+.copy h1{
+    font-size: 15px;
+    color: #0F2137;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    
+}
+
+.copy p{
+    color: rgb(0, 0, 0);
+    font-size: small;
+   
+}
+
+.det-foot h1{
+    font-weight: 600;
+    font-size: large;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    vertical-align: middle;
+}
+
+.det-foot a{
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    margin-left: 50px;
+    display: inline-flex;
+}
+
+.det-foot li img{
+    vertical-align: middle;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+.fb{
+  width: 20px;
+  height: 20px;
+  
+}
+
+.twit{
+  width: 20px;
+  height: 17px;
+  
+}
+.github{
+  width: 20px;
+  height: 21px;
+  
+}
+.drible{
+  width: 20px;
+  height: 21px;
+  
 }

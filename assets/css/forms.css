@@ -101,14 +101,14 @@ header{
 
 /*contact form*/
 .contact{
-    padding: 10% 30px;
+  padding: 10% 30px;
 	width: 100%;
 	height: auto;
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #F8F0EA;
 	align-items: center;
-    justify-content: space-around;
+  justify-content: space-around;
 }
 .container{
   display: flex;
@@ -116,7 +116,6 @@ header{
   justify-content: center;
   z-index: 18;
   max-width: 1050px;
-  
   width: 100%;
   background: #fff;
   border-radius: 54px;
@@ -162,6 +161,12 @@ header{
    color: #0A8080;
 }
 
+.content .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 16px 0;
+  position: relative;
+}
 
 input[type=text], select {
     width: 100%;
@@ -177,7 +182,7 @@ input[type=text], select {
   input[type=submit] {
     background-color: #0A8080;
     color: white;
-    padding: 12px 180px;
+    padding: 12px 155px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
