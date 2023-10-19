@@ -21,49 +21,72 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
+    <script
+    src="https://kit.fontawesome.com/e33ad97e44.js"
+    crossorigin="anonymous"
+  ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!--Header section Start-->
+    <!--Header section start-->
     <header>
-      <a href="../index.html" title="go here" class="logo"
-        ><img src="../assets/img/r.png" alt="" class="logoimg" />Innovations</a
-      >
+      <nav class="topnav" id="myTopnav">
+        <a href="../index.html" class="logo"
+          ><img
+            src="../assets/img/r.png"
+            alt=""
+            class="logoimg"
+          />Innovations</a
+        >
 
-      <ul class="navlist">
-        <li>
-          <a href="../index.html"><i class="bx bx-home-alt-2"></i>Home</a>
-        </li>
-        <li>
-          <a title="go here" href="services.html"
-            ><i class="bx bx-message-alt-add"></i>services</a
-          >
-        </li>
-        <li>
-          <a title="go here" href="contact.html"
-            ><i class="bx bx-support"></i>Support</a
-          >
-        </li>
-        <li>
-          <a title="go here" href="about.html"
-            ><i class="bx bx-info-circle"></i>About</a
-          >
-        </li>
-      </ul>
-      <div class="other">
-        <a title="go here" href="login.html" class="btn">Login</a>
-        <a title="go here" href="signup.html" class="btn2">Get Started</a>
-        <div class="line">
-          <img src="../assets/img/line.png" alt="#" />
+        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a> -->
+
+        <ul class="navlist">
+          <li>
+            <a href="../index.html"></i>Home</a>
+          </li>
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" id="myDropdown1"
+              >Support <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </li>
+          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" id="myDropdown2"
+              >Advertise <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact Sales</a></li>
+            </ul>
+          </li>
+
+
+
+          <li>
+            <a href="about.html"></i>About</a>
+          </li>
+        </ul>
+        <div class="other">
+          <a href="login.html" class="btn">Login</a>
+          <a href="signup.html" class="btn2">Get Started</a>
+          <div class="line">
+            <img src="../assets/img/line.png" alt="#" />
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
-    <!--Header section End-->
-
+    <!--Header section end-->
     <section class="advertise">
       <div class="title-sec">
         <h1>Our Services</h1>

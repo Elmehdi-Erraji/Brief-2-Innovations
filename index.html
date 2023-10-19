@@ -21,7 +21,10 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
-
+    <script
+    src="https://kit.fontawesome.com/e33ad97e44.js"
+    crossorigin="anonymous"
+  ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,48 +33,53 @@
     />
   </head>
   <body>
-    <!--Header section start-->
-    <header>
-      <nav>
-        <a title="go here" href="index.html" class="logo"
+     <!--Header section start-->
+     <header>
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="logo"
           ><img
             src="assets/img/r.png"
             alt=""
             class="logoimg"
-            width="#"
-            height="#"
           />Innovations</a
         >
 
         <ul class="navlist">
           <li>
-            <a title="go here" href="index.html"
-              ><i class="bx bx-home-alt-2"></i>Home</a
-            >
+            <a href="index.html"></i>Home</a>
           </li>
-          <li>
-            <a title="go here" href="pages/services.html">
-              <i class="bx bx-message-alt-add"></i>services</a
-            >
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" id="myDropdown1"
+              >Support <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="pages/contact.html">Contact Us</a></li>
+            </ul>
           </li>
-          <li>
-            <a title="go here" href="pages/contact.html"
-              ><i class="bx bx-support"></i>Support</a
-            >
+          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" id="myDropdown2"
+              >Advertise <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="pages/services.html">Services</a></li>
+              <li><a href="pages/contact.html">Contact Sales</a></li>
+            </ul>
           </li>
+
+
+
           <li>
-            <a title="go here" href="pages/about.html"
-              ><i class="bx bx-info-circle"></i>About</a
-            >
+            <a href="pages/about.html"></i>About</a>
           </li>
         </ul>
         <div class="other">
-          <a title="go here" href="pages/login.html" class="btn">Login</a>
-          <a title="go here" href="pages/signup.html" class="btn2"
-            >Get Started</a
-          >
+          <a href="pages/login.html" class="btn">Login</a>
+          <a href="pages/signup.html" class="btn2">Get Started</a>
           <div class="line">
-            <img src="assets/img/line.png" alt="#" width="#" height="#" />
+            <img src="assets/img/line.png" alt="#" />
           </div>
         </div>
       </nav>
@@ -152,7 +160,7 @@
       </div>
     </section>
     <!-- hero section end-->
-
+    
     <!-- services section start-->
     <section class="services">
       <div class="cards2 title-sec1">

@@ -19,7 +19,10 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
-
+    <script
+    src="https://kit.fontawesome.com/e33ad97e44.js"
+    crossorigin="anonymous"
+  ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,48 +31,66 @@
     />
   </head>
   <body>
-    <!--Header section-->
-    <header>
-      <nav>
+     <!--Header section start-->
+     <header>
+      <nav class="topnav" id="myTopnav">
         <a href="../index.html" class="logo"
           ><img
             src="../assets/img/r.png"
             alt=""
             class="logoimg"
-            width="#"
-            height="#"
           />Innovations</a
         >
 
+        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a> -->
+
         <ul class="navlist">
           <li>
-            <a href="../index.html"><i class="bx bx-home-alt-2"></i>Home</a>
+            <a href="../index.html"></i>Home</a>
           </li>
-          <li>
-            <a href="contact.html"
-              ><i class="bx bx-message-alt-add"></i>services</a
-            >
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" id="myDropdown1"
+              >Support <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
           </li>
-          <li>
-            <a href="contact.html"><i class="bx bx-support"></i>Support</a>
+          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" id="myDropdown2"
+              >Advertise <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact Sales</a></li>
+            </ul>
           </li>
+
+
+
           <li>
-            <a href="about.html"><i class="bx bx-info-circle"></i>About</a>
+            <a href="about.html"></i>About</a>
           </li>
         </ul>
         <div class="other">
           <a href="login.html" class="btn">Login</a>
           <a href="signup.html" class="btn2">Get Started</a>
           <div class="line">
-            <img src="../assets/img/line.png" alt="#" width="#" height="#" />
+            <img src="../assets/img/line.png" alt="#" />
           </div>
         </div>
       </nav>
     </header>
+    <!--Header section end-->
 
     <section class="contact" id="contact">
-      <div class="container">
-        <div class="content2">
+      <div class="container" >
+        <div class="content">
           <div class="image-box">
             <img
               src="../assets/img/Log in.png"
@@ -80,9 +101,9 @@
           </div>
           <form action="#">
             <h1>Log <span>Up</span></h1>
-            <h2 style="font-size: 15px">Welcome back.</h2>
+            <h2 style="font-size: 15px;">Welcome back.</h2>
             <br />
-            <input type="text" name="lastname" placeholder="Email*" required />
+            <input type="text" name="lastname" placeholder="Email*"  required />
             <input
               type="text"
               name="lastname"
@@ -92,7 +113,12 @@
             <a href="contact.html">Forget your Password?</a>
             <br />
             <br />
-            <input class="send button" type="submit" value="Log In" />
+            <input
+              class="send button"
+              type="submit"
+              value="Log In"
+              id="contact-btn1"
+            />
           </form>
         </div>
       </div>
