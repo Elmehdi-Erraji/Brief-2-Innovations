@@ -1,18 +1,37 @@
-const header = document.querySelector("header"); 
+function myFunction() {
+	document.getElementById("myDropdown").classList.toggle("show");
+  }
 
-window.addEventListener ("scroll", function() {
-	header.classList.toggle ("sticky", window.scrollY > 0);
-});
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+	  var dropdowns = document.getElementsByClassName("dropdown-content");
+	  var i;
+	  for (i = 0; i < dropdowns.length; i++) {
+		var openDropdown = dropdowns[i];
+		if (openDropdown.classList.contains('show')) {
+		  openDropdown.classList.remove('show');
+		}
+	  }
+	}
+  } 
 
-let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.nav');
 
-menu.onclick = () => {
-	menu.classList.toggle('bx-x');
-	navbar.classList.toggle('open');
-};
+  function myFunction1() {
+	document.getElementById("myDropdown1").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+	  var dropdowns = document.getElementsByClassName("dropdown-content");
+	  var i;
+	  for (i = 0; i < dropdowns.length; i++) {
+		var openDropdown = dropdowns[i];
+		if (openDropdown.classList.contains('show')) {
+		  openDropdown.classList.remove('show');
+		}
+	  }
+	}
+  }
 
-window.onscroll = () => {
-	menu.classList.remove('bx-x');
-	navbar.classList.remove('open');
-};
