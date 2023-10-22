@@ -57,6 +57,12 @@ nav {
     font-size: 20px;
     align-items: center;
   }
+  .logo1 {
+    display: flex;
+    color: black;
+    font-size: 20px;
+    align-items: center;
+  }
   
   .logo img {
     margin-right: 15px;
@@ -85,6 +91,9 @@ nav {
     right: 14%;
   }
   
+  .icon1 {
+    display: none;
+  }
   /* Style the dropdown container */
   .navlist .dropdown {
     position: relative;
@@ -233,9 +242,32 @@ footer{
 
 @media screen and (max-width: 1154px) {
 
-   nav{
+   /* nav{
     display: none;
    }
-   
+    */
+
+ 
+  .navlist{
+    display: none;
+  }
+  .other{
+    display: none;
+  }
+  .topnav a.icon1 {
+    float: right;
+    display: block;
+    color: black;
+    
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon1 {
+    display: block;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
  }
  
