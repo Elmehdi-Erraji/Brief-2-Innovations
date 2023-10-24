@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (myForm) {
         myForm.addEventListener('submit', function (e) {
             e.preventDefault(); // Prevent the form from submitting
-
+ 
             // Validation for 'myForm'
             const firstname = document.querySelector('[name="firstname"]').value;
             const email = document.querySelector('[name="email"]').value;

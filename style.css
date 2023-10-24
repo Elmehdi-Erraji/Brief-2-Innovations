@@ -13,7 +13,7 @@
 }
 
 .title-sec h1 {
-    color: black;
+    color: #0F2137;
     font-size: 30px;
 }
 
@@ -354,4 +354,176 @@ form a {
      color: black;
 }
 /*subscribe end */
+
+@media screen and (max-width: 768px) {
+    .home {
+      padding: 8% 5%;
+    }
+  
+    .title-sec h1 {
+      font-size: 20px;
+    }
+  
+    .title-sec p {
+      margin: 10px;
+    }
+  
+    .getbtn {
+      padding: 10px 18px;
+      margin-top: 10px;
+    }
+  
+    .home-img img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .cards {
+      padding: 8% 5%;
+      top: 70%;
+    }
+  
+    .cards h1 {
+      font-size: 20px;
+    }
+  
+    .cards p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  
+    .row {
+      margin-top: 5%;
+    }
+  
+    .rows-1 img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .details h1 {
+      font-size: 18px;
+    }
+  
+    .details p {
+      width: 100%;
+    }
+  
+    .quot img {
+      right: 10%;
+      width: 40px;
+      height: 33px;
+    }
+  
+    .quot p {
+      width: 100%;
+      font-size: 16px;
+      bottom: 30%;
+    }
+  
+    .quot .p2 {
+      font-size: 12px;
+      bottom: 27%;
+    }
+  
+    .social {
+      margin-top: 10%;
+    }
+  
+    .supp {
+      margin-top: 30px;
+    }
+  
+    .supp img {
+      width: 80px;
+    }
+  
+    .team {
+      padding: 20% 5%;
+    }
+  
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    .col img {
+      padding: 10px;
+    }
+  
+    .icons a i {
+      font-size: 14px;
+    }
+  
+    .icon-s {
+      width: 40px;
+      height: 40px;
+      right: 15%;
+      bottom: -130%;
+    }
+  
+    .icon-s i {
+      font-size: 18px;
+    }
+  
+    .col-final {
+      filter: contrast(70%);
+    }
+  
+    .blog .title-sec {
+      margin-top: 10%;
+    }
+  
+    .col__blog {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .col-blog h1 {
+      font-size: 18px;
+      width: 100%;
+    }
+  
+    .col-blog p {
+      font-size: 14px;
+    }
+  
+    .col-blog .txt {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    .col-blog .txt h1 {
+      width: 100%;
+    }
+  
+    .col-blog .image img {
+      margin-bottom: 10px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .col-blog .image .txt1,
+    .col-blog .image .txt2 {
+      bottom: -180%;
+    }
+  
+    /* Additional styles for the subscribe section */
+    .subscribe {
+      margin-top: 20%;
+    }
+  
+    .det {
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+    }
+  
+    .titles h1 {
+      font-size: 18px;
+    }
+  
+    .titles p {
+      font-size: 12px;
+      width: 100%;
+    }
+  }
 

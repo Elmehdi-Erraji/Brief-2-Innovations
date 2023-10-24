@@ -29,16 +29,15 @@
   </head>
   <body>
      <!--Header section start-->
-    <header>
-      <nav class="topnav" id="myTopnav">
+
+     <header>
+      <nav class="topnav open" id="myTopnav">
         <a href="../index.html" class="logo" >
           <img
             src="../assets/img/r.png"
             alt=""
             class="logoimg"
           />Innovations</a>
-       
-
         <ul class="navlist">
           <li>
             <a href="../index.html"></i>Home</a>
@@ -47,7 +46,7 @@
             <a href="#" class="dropdown-toggle" id="myDropdown1" >Support <i class="fa-solid fa-caret-down"></i></a>
             <ul class="dropdown-menu">
               <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            </ul> 
           </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" id="myDropdown2"
@@ -67,16 +66,32 @@
           <a href="signup.html" class="btn2">Get Started</a>
           <div class="line">
             <img src="../assets/img/line.png" alt="#" />
-          </div>
-          
+          </div>                   
         </div>
-        <a href="javascript:void(0);" class="icon1" onclick="myFunction4()">
+        <a class="hamburger">
           <i class="fa fa-bars "></i>
         </a>
+
+
+        <div class="flex-menu ">
+          <ul>
+            
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Advertise</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li>
+              <a href="signup.html" id="getStarted">Get started</a>
+            </li>
+          </ul>
+        </div>
+
+
       </nav>
     </header>
-
-    <!--Header section end-->
+  <!--Header section end-->
    
     <section class="contact" id="contact">
       <div class="container" >
@@ -209,7 +224,7 @@
         </div>
       </div>
     </footer>
-    <script src="../assets/js/main.js"></script>
     <script src="../assets/js/forms.js"></script>
+    <script src="../assets/js/test.js"></script>
   </body>
 </html>

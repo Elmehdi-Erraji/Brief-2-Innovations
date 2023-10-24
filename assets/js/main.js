@@ -1,48 +1,25 @@
-// function myFunction() {
-// 	document.getElementById("myDropdown").classList.toggle("show");
-//   }
+// =============== start the nav bar
+const nav = document.querySelector("header nav");
 
-//   // Close the dropdown if the user clicks outside of it
-//   window.onclick = function(event) {
-// 	if (!event.target.matches('.dropbtn')) {
-// 	  var dropdowns = document.getElementsByClassName("dropdown-content");
-// 	  var i;
-// 	  for (i = 0; i < dropdowns.length; i++) {
-// 		var openDropdown = dropdowns[i];
-// 		if (openDropdown.classList.contains('show')) {
-// 		  openDropdown.classList.remove('show');
-// 		}
-// 	  }
-// 	}
-//   } 
+window.onscroll = () => {
+    if(window.scrollY > 250) {
+        nav.classList.add("scrolled");
+    } else {
+        nav.classList.remove("scrolled");
+    }
+}
+// =============== end the nav bar
 
+// =============== start the menu
+const burgerIcon = document.querySelector("header nav i.burger"),
+      closeIcon = document.querySelector("header li.close-icon"),
+      navBar = document.querySelector("header nav ul");
 
-//   function myFunction1() {
-// 	document.getElementById("myDropdown1").classList.toggle("show");
-//   }
-  
-//   // Close the dropdown if the user clicks outside of it
-//   window.onclick = function(event) {
-// 	if (!event.target.matches('.dropbtn')) {
-// 	  var dropdowns = document.getElementsByClassName("dropdown-content");
-// 	  var i;
-// 	  for (i = 0; i < dropdowns.length; i++) {
-// 		var openDropdown = dropdowns[i];
-// 		if (openDropdown.classList.contains('show')) {
-// 		  openDropdown.classList.remove('show');
-// 		}
-// 	  }
-// 	}
-//   }
+burgerIcon.addEventListener("click", () => {
+    navBar.classList.add("active");
+});
 
-
-  function myFunction4() {
-	var x = document.getElementById("myTopnav");
-	if (x.className === "topnav") {
-	  x.className += " responsive";
-	} else {
-	  x.className = "topnav";
-	}
-  }
-
-
+closeIcon.addEventListener("click", () => {
+    navBar.classList.remove("active");
+});
+// =============== end the menu

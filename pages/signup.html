@@ -31,62 +31,70 @@
     />
   </head>
   <body>
-              <!--Header section start-->
-              <header>
-                <nav class="topnav" id="myTopnav">
-                  <a href="../index.html" class="logo"
-                    ><img
-                      src="../assets/img/r.png"
-                      alt=""
-                      class="logoimg"
-                    />Innovations</a
-                  >
+  <!--Header section start-->
+
+  <header>
+    <nav class="topnav open" id="myTopnav">
+      <a href="../index.html" class="logo" >
+        <img
+          src="../assets/img/r.png"
+          alt=""
+          class="logoimg"
+        />Innovations</a>
+      <ul class="navlist">
+        <li>
+          <a href="../index.html"></i>Home</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" id="myDropdown1" >Support <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul> 
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" id="myDropdown2"
+            >Advertise <i class="fa-solid fa-caret-down"></i
+          ></a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Sales</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="about.html"></i>About</a>
+        </li>
+      </ul>
+      <div class="other">
+        <a href="login.html" class="btn">Login</a>
+        <a href="signup.html" class="btn2">Get Started</a>
+        <div class="line">
+          <img src="../assets/img/line.png" alt="#" />
+        </div>                   
+      </div>
+      <a class="hamburger">
+        <i class="fa fa-bars "></i>
+      </a>
+
+
+      <div class="flex-menu ">
+        <ul>
           
-                  <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                  </a> -->
-          
-                  <ul class="navlist">
-                    <li>
-                      <a href="../index.html"></i>Home</a>
-                    </li>
-          
-          
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" id="myDropdown1"
-                        >Support <i class="fa-solid fa-caret-down"></i
-                      ></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="contact.html">Contact Us</a></li>
-                      </ul>
-                    </li>
-                    
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" id="myDropdown2"
-                        >Advertise <i class="fa-solid fa-caret-down"></i
-                      ></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact Sales</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="about.html"></i>About</a>
-                    </li>
-                  </ul>
-                  <div class="other">
-                    <a href="login.html" class="btn">Login</a>
-                    <a href="signup.html" class="btn2">Get Started</a>
-                    <div class="line">
-                      <img src="../assets/img/line.png" alt="#" />
-                    </div>
-                  </div>
-                </nav>
-                <a href="javascript:void(0);" class="icon1" onclick="myFunction4()">
-                  <i class="fa fa-bars "></i>
-                </a>
-              </header>
-              <!--Header section end-->
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Advertise</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li>
+            <a href="signup.html" id="getStarted">Get started</a>
+          </li>
+        </ul>
+      </div>
+
+
+    </nav>
+  </header>
+<!--Header section end-->
 
 
     <section class="contact" id="contact">
@@ -241,7 +249,7 @@
         </div>
       </div>
     </footer>
-    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/test.js"></script>
     <script src="../assets/js/forms.js"></script>
   </body>
 </html>
