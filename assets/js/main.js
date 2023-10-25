@@ -1,25 +1,27 @@
-// =============== start the nav bar
-const nav = document.querySelector("header nav");
-
-window.onscroll = () => {
-    if(window.scrollY > 250) {
-        nav.classList.add("scrolled");
-    } else {
-        nav.classList.remove("scrolled");
-    }
+//Accordion section 
+const items = document.querySelectorAll('.accordion button');
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
 }
-// =============== end the nav bar
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
 
-// =============== start the menu
-const burgerIcon = document.querySelector("header nav i.burger"),
-      closeIcon = document.querySelector("header li.close-icon"),
-      navBar = document.querySelector("header nav ul");
 
-burgerIcon.addEventListener("click", () => {
-    navBar.classList.add("active");
+
+
+// Menu burger
+const hamburger = document.querySelector(".hamburger");
+const flexMenu = document.querySelector(".flex-menu");
+
+hamburger.addEventListener('click', function() {
+  flexMenu.classList.toggle('open');
+
 });
 
-closeIcon.addEventListener("click", () => {
-    navBar.classList.remove("active");
-});
-// =============== end the menu
+
+
