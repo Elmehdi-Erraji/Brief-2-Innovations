@@ -57,6 +57,12 @@ nav {
     font-size: 20px;
     align-items: center;
   }
+  .logo1 {
+    display: flex;
+    color: black;
+    font-size: 20px;
+    align-items: center;
+  }
   
   .logo img {
     margin-right: 15px;
@@ -84,6 +90,7 @@ nav {
     position: absolute;
     right: 14%;
   }
+  
   
   /* Style the dropdown container */
   .navlist .dropdown {
@@ -131,6 +138,121 @@ nav {
 
 
 
+  .flex-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 60%;
+    top: 70px;
+    width: 300px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    background-color: white;
+  }
+  .flex-menu a {
+    margin-left: 10%;
+    text-decoration:underline;
+    color: black;
+    font-weight: 600;
+    padding: 3%;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .flex-menu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .flex-menu.open {
+    height: 300px;
+  }
+.dropbtn {
+  border: none;
+  cursor: pointer;
+}
+
+  .dropdown-content.show{ 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    top: 30px; 
+    border: none; 
+    box-shadow: none; 
+    text-align: center; 
+    background: #ffffff; 
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 70px;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display: block;
+}
+.menu-hamburger {
+    display: none;
+  }
+  
+  .navbar-links {
+    display: flex;
+  }
+
+
+
+  @media (max-width: 1145px) {
+    
+    .dropdown-content.show{ 
+        position: absolute; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        top: 30px; 
+        border: none; 
+        box-shadow: none; 
+        text-align: center; 
+        background: #ffffff; 
+    }
+    
+    
+    .hamburger {
+      display: block;
+      margin-left: 70%;
+    }
+  
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .flex-menu {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
   
 /*footer style*/
@@ -233,9 +355,32 @@ footer{
 
 @media screen and (max-width: 1154px) {
 
-   nav{
+   /* nav{
     display: none;
    }
-   
+    */
+
+ 
+  .navlist{
+    display: none;
+  }
+  .other{
+    display: none;
+  }
+  .topnav a.icon1 {
+    float: right;
+    display: block;
+    color: black;
+    
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon1 {
+    display: block;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
  }
  

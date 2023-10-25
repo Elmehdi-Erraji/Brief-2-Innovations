@@ -29,36 +29,25 @@
   </head>
   <body>
      <!--Header section start-->
-                  <!--Header section start-->
-    <header>
-      <nav class="topnav" id="myTopnav">
-        <a href="../index.html" class="logo"
-          ><img
+
+     <header>
+      <nav class="topnav open" id="myTopnav">
+        <a href="../index.html" class="logo" >
+          <img
             src="../assets/img/r.png"
             alt=""
             class="logoimg"
-          />Innovations</a
-        >
-
-        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a> -->
-
+          />Innovations</a>
         <ul class="navlist">
           <li>
             <a href="../index.html"></i>Home</a>
           </li>
-
-
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" id="myDropdown1"
-              >Support <i class="fa-solid fa-caret-down"></i
-            ></a>
+            <a href="#" class="dropdown-toggle" id="myDropdown1" >Support <i class="fa-solid fa-caret-down"></i></a>
             <ul class="dropdown-menu">
               <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            </ul> 
           </li>
-          
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" id="myDropdown2"
               >Advertise <i class="fa-solid fa-caret-down"></i
@@ -68,9 +57,6 @@
               <li><a href="contact.html">Contact Sales</a></li>
             </ul>
           </li>
-
-
-
           <li>
             <a href="about.html"></i>About</a>
           </li>
@@ -80,14 +66,33 @@
           <a href="signup.html" class="btn2">Get Started</a>
           <div class="line">
             <img src="../assets/img/line.png" alt="#" />
-          </div>
+          </div>                   
         </div>
+        <a class="hamburger">
+          <i class="fa fa-bars "></i>
+        </a>
+
+
+        <div class="flex-menu ">
+          <ul>
+            
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Advertise</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li>
+              <a href="signup.html" id="getStarted">Get started</a>
+            </li>
+          </ul>
+        </div>
+
+
       </nav>
     </header>
-    <!--Header section end-->
-    <!--Header section end-->
-
-
+  <!--Header section end-->
+   
     <section class="contact" id="contact">
       <div class="container" >
         <div class="content">
@@ -99,16 +104,16 @@
               height="#"
             />
           </div>
-          <form action="#">
+          <form action="#" id="login">
             <h1>Log <span>Up</span></h1>
             <h2 style="font-size: 15px;">Welcome back.</h2>
             <br />
-            <input type="text" name="lastname" placeholder="Email*"  required />
+            <input type="text" name="email" placeholder="Email*"   />
             <input
-              type="text"
-              name="lastname"
+              type="password"
+              name="password"
               placeholder="Password*"
-              required
+              
             />
             <a href="contact.html">Forget your Password?</a>
             <br />
@@ -120,9 +125,10 @@
               id="contact-btn1"
             />
           </form>
+         
         </div>
       </div>
-    </section>
+    </section> 
 
     <!--Footer section-->
     <footer>
@@ -218,6 +224,7 @@
         </div>
       </div>
     </footer>
+    <script src="../assets/js/forms.js"></script>
     <script src="../assets/js/main.js"></script>
   </body>
 </html>

@@ -9,18 +9,15 @@
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #F8F0EA;
-	align-items: center;
   justify-content: space-around;
 }
 .container{
   display: flex;
   align-items: center;
-  justify-content: center;
-  z-index: 18;
+  justify-content: center; 
   max-width: 60%;
   background: #fff;
   border-radius: 54px;
-  margin: 0 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -67,6 +64,16 @@
 }
 
 input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=password], select {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -142,10 +149,9 @@ input[type=text], select {
   /*for the contact form*/
  
   @media screen and (max-width: 1400px) {
-  
+   
     .container{
-      
-      
+      margin-bottom: 50px;
       max-width: 100%;
       background: #fff;
       border-radius: 54px;
@@ -153,7 +159,8 @@ input[type=text], select {
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     }
     .container .content{
-      padding: 30px 40px;
+     
+      padding: 40px 40px;
     }
     
     .content .image-box{
@@ -229,12 +236,23 @@ input[type=text], select {
      display: none;
      
     }
-    footer{
-      background-color: red;
-      text-align: start;
-    }
   } 
 
   
- 
+  @media screen and (max-width: 920px) {
+    .contact{
+      padding: 15% 30px;
+    }
+  }
 
+  @media screen and (max-width: 500px) {
+    .contact{
+      padding: 20% 30px;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .contact{
+      padding: 20% 30px;
+    }
+  }

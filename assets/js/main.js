@@ -1,37 +1,27 @@
-function myFunction() {
-	document.getElementById("myDropdown").classList.toggle("show");
+//Accordion section 
+const items = document.querySelectorAll('.accordion button');
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
   }
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-	if (!event.target.matches('.dropbtn')) {
-	  var dropdowns = document.getElementsByClassName("dropdown-content");
-	  var i;
-	  for (i = 0; i < dropdowns.length; i++) {
-		var openDropdown = dropdowns[i];
-		if (openDropdown.classList.contains('show')) {
-		  openDropdown.classList.remove('show');
-		}
-	  }
-	}
-  } 
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
 
 
-  function myFunction1() {
-	document.getElementById("myDropdown1").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-	if (!event.target.matches('.dropbtn')) {
-	  var dropdowns = document.getElementsByClassName("dropdown-content");
-	  var i;
-	  for (i = 0; i < dropdowns.length; i++) {
-		var openDropdown = dropdowns[i];
-		if (openDropdown.classList.contains('show')) {
-		  openDropdown.classList.remove('show');
-		}
-	  }
-	}
-  }
+
+
+// Menu burger
+const hamburger = document.querySelector(".hamburger");
+const flexMenu = document.querySelector(".flex-menu");
+
+hamburger.addEventListener('click', function() {
+  flexMenu.classList.toggle('open');
+
+});
+
+
 
