@@ -17,7 +17,7 @@
 }
 
 .title-sec1 h2 {
-    font-size: 28px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
@@ -51,7 +51,8 @@
     .title-sec1 {
         text-align: center;
     }
-
+   
+  
     .adver-img1 img {
         margin-top: 8%;
        margin-left: 60%;
@@ -71,6 +72,10 @@
 
     .title-sec1 {
         margin-top: 10%;
+    }
+    .title-sec1 h2 {
+      font-size: 18px;
+      
     }
 }
 
