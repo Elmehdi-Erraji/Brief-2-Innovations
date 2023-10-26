@@ -1,4 +1,4 @@
-@import url(assets/css/global.css);
+@import url(../css/global.css);
 
 
 
@@ -493,7 +493,7 @@ small{
 #subscribe {
   height: 400px;
   width: 100%;
-  background-image: url(assets/img/Group\ 79.png);
+  background-image: url(../img/Group\ 79.png);
   display: flex;
   justify-content: center;
   align-items: center;
