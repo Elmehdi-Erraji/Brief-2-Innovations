@@ -23,8 +23,7 @@ This project involves improving the interactivity and responsiveness of the "Inn
 - HTML5
 - CSS3
 - JavaScript
-
-Feel free to utilize JavaScript libraries if needed to simplify implementation. The graphic design was created using Figma.
+- JavaScript Swiper library
 
 ### As a UI/UX Designer:
 
@@ -52,6 +51,6 @@ Feel free to utilize JavaScript libraries if needed to simplify implementation. 
 
 ## Contact Information
 
-For inquiries or support, you can reach out me .
+For inquiries or support, you can contact me .
 
 
