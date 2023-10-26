@@ -46,6 +46,37 @@ section .hero-content img{
   padding:0 0 40px;
 }
 
+/*-- hero section -- */
+.hero{
+  width: 100%;
+}
+section .hero-content{
+  text-align: left;
+  margin-left: 3%;
+  min-width: 85%;
+}
+section .hero-content h1{
+  padding-top: 50px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: var(--heading-color);
+  line-height: 40px;
+}
+section .hero-content p{
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+section .hero-content button{
+  padding: 8px 15px;
+  font-size: 13px;
+}
+section .hero-content img{
+  min-width: 90%;
+  position: absolute;
+  top:50%;
+  left: 48%;
+  transform: translate(-50%, 16%);
+}
 /* -- Services section -- */
 .services{
   background-color: var(--background-color-2);
@@ -277,37 +308,7 @@ small{
 @media only screen and (max-width: 768px) {
 
   
-  /*-- hero section -- */
-  .hero{
-      width: 100%;
-  }
-  section .hero-content{
-      text-align: left;
-      margin-left: 3%;
-      min-width: 85%;
-  }
-  section .hero-content h1{
-      padding-top: 50px;
-      margin-bottom: 20px;
-      font-size: 28px;
-      color: var(--heading-color);
-      line-height: 40px;
-  }
-  section .hero-content p{
-      line-height: 30px;
-      margin-bottom: 10px;
-  }
-  section .hero-content button{
-      padding: 8px 15px;
-      font-size: 13px;
-  }
-  section .hero-content img{
-      min-width: 90%;
-      position: absolute;
-      top:50%;
-      left: 48%;
-      transform: translate(-50%, 16%);
-  }
+  
   /* Paddings */
   .pd1{
       padding: 50px 0;
@@ -344,44 +345,7 @@ small{
       text-align: right;
       font-size: 12px;
   }
-  /* -- banner -- */
-  /* .banner::after{
-      width: 60px;
-  }
-  .banner img{
-      width: 40px;
-  } */
-  /* -- Team section --
-  .team-item{
-      width: 100%;
-  }
-  .item-description a, .left a{
-      margin-top: 10px;
-  }
-  .team .top{
-      justify-content: flex-start;
-  }
-  .team .top a:nth-child(2), .team .top a:nth-child(3){
-      display: none;
-  }
-  .team .top::after{
-      width: 150px;
-      left: 23%;
-  }
-  .team .container{
-      flex-direction: column-reverse;
-  }
-  .team .left{
-      flex-basis: 100%;
-      margin-top: 30px;
-  }
-  .left p{
-      padding: 20px 0 30px;
-  } */
-
-
-
-
+  
 
 
   /* -- Blog section -- */
