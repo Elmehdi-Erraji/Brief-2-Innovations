@@ -26,8 +26,6 @@ This project involves improving the interactivity and responsiveness of the "Inn
 
 Feel free to utilize JavaScript libraries if needed to simplify implementation. The graphic design was created using Figma.
 
-## User Stories
-
 ### As a UI/UX Designer:
 
 - I updated the website mockup to reflect the changes and ensure visual consistency.
