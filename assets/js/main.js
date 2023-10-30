@@ -16,7 +16,7 @@ items.forEach((item) => item.addEventListener('click', toggleAccordion));
 
 // Menu burger
 const hamburger = document.querySelector(".hamburger");
-const flexMenu = document.querySelector(".flex-menu");
+ const flexMenu = document.querySelector(".flex-menu");
 
 hamburger.addEventListener('click', function() {
   flexMenu.classList.toggle('open');

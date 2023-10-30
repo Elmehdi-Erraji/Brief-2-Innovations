@@ -528,7 +528,7 @@
   .accordion h1{
     margin-bottom: 2%;
   }
-  .accordion .accordion-item button[aria-expanded='true'] {
+  .accordion .accordion-item button[aria-expanded=''] {
     border-bottom: 1px solid #03b5d2;
   }
   .accordion button {
